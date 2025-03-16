@@ -27,7 +27,7 @@ git clone https://github.com/krstkaan/kaanwebReact.git
 Navigate to the directory:
 
 ```bash
-cd portfolio
+cd kaanweb
 ```
 
 Install dependencies:

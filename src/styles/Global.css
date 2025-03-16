@@ -1,0 +1,108 @@
+/* Global Section Style */
+.section {
+  padding: 60px 80px;
+  background-color: var(--card-bg-color);
+  color: var(--text-color);
+}
+
+/* Default for all screen sizes */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Apply padding only on mobile devices */
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 400px;
+  }
+}
+
+/* Başlıklar */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* Paragraflar */
+.section-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
+/* Card yapısı daha geniş olacak */
+.card {
+  width: 100%;
+}
+
+/* Responsive Düzenlemeler */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-text {
+    font-size: 1rem;
+  }
+}
+
+.animate-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-item:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.animate-item:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+.animate-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation for the about section specifically */
+.about-section.animate-section {
+  transform: translateY(40px);
+}
+
+.about-section.animate-section.visible {
+  transform: translateY(0);
+}
+
+.about-section .section-title.animate-item {
+  transform: translateY(-20px);
+}
+
+.about-section .section-title.animate-item.visible {
+  transform: translateY(0);
+}
+
+.about-section .section-text.animate-item {
+  transform: translateX(20px);
+}
+
+.about-section .section-text.animate-item.visible {
+  transform: translateX(0);
+}

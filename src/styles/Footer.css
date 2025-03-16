@@ -1,0 +1,56 @@
+/* Footer Temel Stil */
+.footer-section {
+    padding: 20px 30px;
+    background-color: var(--footer-bg-color);
+    color: var(--text-color);
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-content p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Sosyal Medya İkonları */
+  .footer-social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-icon {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-icon:hover {
+    color: #0d6efd;
+    transform: scale(1.1);
+  }
+  
+  /* Dark Mode Özelleştirme */
+  [data-theme='dark'] .footer-section {
+    background-color: #1f1f1f;
+    color: #ccc;
+  }
+  
+  [data-theme='dark'] .footer-icon:hover {
+    color: #66b2ff;
+  }
+  
+  /* Responsive Düzenleme */
+  @media (max-width: 768px) {
+    .footer-content {
+      gap: 15px;
+    }
+  }
+  

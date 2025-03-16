@@ -1,0 +1,58 @@
+/* ExperienceSkills.css */
+
+.experience-skills-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.animate-section {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  flex: 1;
+  min-width: 0; /* Prevents flex items from growing beyond their container */
+}
+
+.animate-section:first-child {
+  transform: translateX(-30px);
+}
+
+.animate-section:first-child.visible {
+  transform: translateX(0);
+}
+
+.animate-section:last-child {
+  transform: translateX(30px);
+}
+
+.animate-section:last-child.visible {
+  transform: translateX(0);
+}
+
+.animate-section.visible {
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .experience-skills-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .animate-section {
+    width: 100%;
+  }
+  
+  .animate-section:first-child,
+  .animate-section:last-child {
+    transform: translateY(30px);
+  }
+  
+  .animate-section:first-child.visible,
+  .animate-section:last-child.visible {
+    transform: translateY(0);
+  }
+}

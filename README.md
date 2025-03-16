@@ -21,7 +21,7 @@ This project is a personal portfolio website developed using React. It offers a 
 Clone the project:
 
 ```bash
-git clone https://github.com/kursatkaan/portfolio.git
+git clone https://github.com/krstkaan/kaanwebReact.git
 ```
 
 Navigate to the directory:
